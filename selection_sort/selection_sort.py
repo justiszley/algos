@@ -1,20 +1,20 @@
 import random
 
 def swapElements (arr, a, b):
-    aVal = arr[a]
-    arr[a] = arr[b]
-    arr[b] = aVal
+    arr[a], arr[b] = arr[b], arr[a]
+
+def selectionSort(arr):
+    copyArr = list(arr);
+    arrLength = len(copyArr)
+    for i in range(arrLength):
+        smallest = i
+        for j in range(i + 1, arrLength):
+            if copyArr[j] < copyArr[smallest]:
+                smallest = j
+        swapElements(copyArr, i, smallest)
+    return copyArr
 
 myList = random.sample(range(-5, 5), 10)
+sortedArr = selectionSort(myList)
 print(myList)
-
-for i in range(10):
-    smallest = i
-    j = i + 1
-    for m in range(10 - (1+i)):
-        if myList[j] < myList[smallest]:
-            smallest = j;
-        j += 1;
-    swapElements(myList, i, smallest)
-
-print(myList)
+print(sortedArr)
