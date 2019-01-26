@@ -1,0 +1,19 @@
+well i wanna do the first algorithm which is selection sort.
+First i'm gonna do it in javascript, 
+because this is the language i've been working with the most.
+And then i'm gonna do the same algorithm in python so i can
+acquaint myself with it.
+
+There're some terms i wanna highlight. 
+Those are key and sattelite data. 
+Now i don't see much need in them.
+In selection sort i'm doing on arrays i have only keys.
+And i can imagine tracking sattelite data in tables, 
+but not in any data structre i know.
+
+btw i don't quite like reading those proofs. I mean those with
+loop invariants. Probably that's why i have problems making
+a working loop with first attempt. It's sometimes just not very
+obvious which value a loop termitates with.
+
+
